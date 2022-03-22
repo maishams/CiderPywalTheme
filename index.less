@@ -1,1 +1,29 @@
-// Theme
+:root {{
+	--keyColor: {color1};
+}}
+div#app {{
+	--color1: {background};
+	--color2: {background};
+	--bgColor: transparent;
+	--bgWidth: 0px;
+	--bgHeight: 0px;
+	--chromeHeight: 55px;
+	--keyColor: {color1};
+	width: 100%;
+	height: 100%;
+	background: {color1};
+	color: {foreground};
+	user-select: none;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background-size: 400% 400%;
+
+	&.simplebg {{
+		background: {background};
+
+		.app-chrome {{
+			z-index: 1;
+		}}
+	}}
+}}
